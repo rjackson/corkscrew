@@ -35,3 +35,14 @@ Stages:
   Clarifying
   Bottling
   Maturation?
+
+Models
+======
+* Customer
+  * name:string email:string
+* BatchType
+  * name:string
+* Actions
+  * batch_type_id:number action_type_id:number trigger_age:number created_at:date updated_at:date
+* Batch
+  * batch_type_id:number customer_id:number created_at:date updated_at:date
