@@ -2,6 +2,7 @@
   "name": "ember-app-kit",
   "dependencies": {
     "ember": "http://builds.emberjs.com/ember-1.0.0-rc.6.1.js",
+    "ember-data": "http://builds.emberjs.com/ember-data-0.13.js",
     "handlebars": "1.0.0-rc.4",
     "jquery": "~1.9.1",
     "qunit": "~1.12.0"
