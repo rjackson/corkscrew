@@ -21,7 +21,6 @@
 /connect.lock
 /libpeerconnection.log
 
-/vendor/
 
 # Ignore build directories
 /tmp
