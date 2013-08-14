@@ -6,8 +6,6 @@
 /ember-gui/connect.lock
 /ember-gui/libpeerconnection.log
 
-/ember-gui/vendor/
-
 # Ignore build directories
 /ember-gui/tmp
 /emger-gui/dist
