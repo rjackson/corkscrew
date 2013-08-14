@@ -13,7 +13,7 @@ test("index renders", function(){
   visit('/').then(function(){
     ok(exists("h2:contains('Welcome to Ember.js')"));
 
-    var list = find("ul li");
+    var list = find("li.colors");
     equal(list.length, 3);
     equal(list.text(), "redyellowblue");
   });
