@@ -42,6 +42,8 @@ Models
   * name:string email:string
 * BatchType
   * name:string
+* ActionType
+  * name:string createdAt:date updatedAt:date
 * Actions
   * batch_type_id:number action_type_id:number trigger_age:number created_at:date updated_at:date
 * Batch
