@@ -9,7 +9,9 @@ var Customer = DS.Model.extend({
   state: DS.attr('string'),
   zip: DS.attr('number'),
   createdAt: DS.attr('date'),
-  updatedAt: DS.attr('date')
+  updatedAt: DS.attr('date'),
+
+  batches: DS.hasMany('App.Batch')
 
 });
 

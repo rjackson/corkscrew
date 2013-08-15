@@ -5,7 +5,8 @@ var Action = DS.Model.extend({
   createdAt: DS.attr('date'),
   updatedAt: DS.attr('date'),
 
-  batchType: DS.belongsTo('App.BatchType')
+  batchType: DS.belongsTo('App.BatchType'),
+  actionType: DS.belongsTo('App.ActionType')
 });
 
 export default Action;
