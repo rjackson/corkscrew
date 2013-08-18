@@ -3,7 +3,7 @@ var Batch = DS.Model.extend({
   customerId: DS.attr('number'),
   createdAt: DS.attr('date'),
   updatedAt: DS.attr('date'),
-  
+
   actions: DS.hasMany('App.Action'),
   batchType: DS.belongsTo('App.BatchType'),
   customer: DS.belongsTo('App.Customer')

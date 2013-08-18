@@ -10,9 +10,7 @@ var App = Ember.Application.create({
 import routes from 'appkit/routes';
 App.Router.map(routes); // TODO: just resolve the router
 
-App.Store = DS.Store.extend({
-  revision: 13,
-  adapter: DS.FixtureAdapter.create()
-});
+import store from 'appkit/store';
+App.Store = store;
 
 export default App;
