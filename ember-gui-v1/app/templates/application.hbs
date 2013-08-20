@@ -4,13 +4,13 @@
     <a class="navbar-brand" href="#">Corkscrew Admin</a>
     <div class="nav-collapse collapse">
       <ul class="nav navbar-nav">
-        <li><a href="#">Batches</a></li>
-        <li><a href="#">Customers</a></li>
+        <li>{{#linkTo 'batches' }}Batches{{/linkTo}}</li>
+        <li>{{#linkTo 'customers' }}Customers{{/linkTo}}</li>
         <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Batch Types</a></li>
-          <li><a href="#">Action Types</a></li>
+          <li>{{#linkTo 'batch_types'}}Batch Types{{/linkTo}}</li>
+          <li>{{#linkTo 'action_types'}}Action Types{{/linkTo}}</li>
         </ul>
         </li>
       </ul>

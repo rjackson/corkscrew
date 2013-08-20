@@ -1,4 +1,3 @@
-import Index from 'appkit/routes/index';
 import App from 'appkit/app';
 
 var route;
