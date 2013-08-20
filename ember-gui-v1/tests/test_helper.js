@@ -31,6 +31,22 @@ Ember.Test.registerHelper('controllerFor', function(app, controllerName) {
   return app.__container__.lookup('controller:' + controllerName);
 });
 
+Ember.Test.registerHelper('hasValidRoute', function(app, routeName, model){
+  test("it exists", function(){
+    var route = routeFor(routeName);
+
+    ok(route);
+    ok(route instanceof Ember.Route);
+  });
+
+  test("#model", function(){
+    var route = routeFor(routeName);
+
+    ok(route.model());
+    equal(route.model().length, model.find().length);
+  });
+});
+
 Ember.Test.registerHelper('hasAssociation', function(app, containerObject, associationName, associationType) {
   test('property: `'+associationName+'`', function(){
     expect(2);
