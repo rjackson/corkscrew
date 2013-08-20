@@ -5,7 +5,7 @@ var route;
 
 module("Unit - BatchesRoute", {
   setup: function(){
-    route = App.__container__.lookup('route:batches');
+    route = routeFor('batches');
   }
 });
 

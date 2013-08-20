@@ -23,6 +23,14 @@ Ember.Container.prototype.stub = function(fullName, instance) {
   this.cache.dict[fullName] = instance;
 };
 
+Ember.Test.registerHelper('routeFor', function(app, routeName) {
+  return app.__container__.lookup('route:' + routeName);
+});
+
+Ember.Test.registerHelper('controllerFor', function(app, controllerName) {
+  return app.__container__.lookup('controller:' + controllerName);
+});
+
 Ember.Test.registerHelper('hasAssociation', function(app, containerObject, associationName, associationType) {
   test('property: `'+associationName+'`', function(){
     expect(2);
