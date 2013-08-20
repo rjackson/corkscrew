@@ -9,9 +9,5 @@ var Batch = DS.Model.extend({
   customer: DS.belongsTo('App.Customer')
 });
 
-Batch.FIXTURES = [
-  { id: 1, createdAt: '2013-08-17'}
-];
-
 export default Batch;
 

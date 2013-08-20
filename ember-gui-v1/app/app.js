@@ -11,7 +11,7 @@ var App = Ember.Application.create({
 import routes from 'appkit/routes';
 App.Router.map(routes); // TODO: just resolve the router
 
-import store from 'appkit/store';
+import store from 'appkit/fixture_store';
 App.Store = store;
 
 export default App;
