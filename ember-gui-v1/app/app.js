@@ -3,6 +3,7 @@ import Resolver from 'resolver';
 var App = Ember.Application.create({
   LOG_ACTIVE_GENERATION: true,
   LOG_VIEW_LOOKUPS: true,
+  LOG_MODULE_RESOLVER: true,
   modulePrefix: 'appkit', // TODO: loaded via config
   resolver: Resolver
 });
